@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <title>What's My Break Even ROAS?</title>
+</head>
+
+<body>
+    <header>
+        <h1>What's My Break Even ROAS?</h1>
+    </header>
+    <div class="module-border-wrap">
+        <div class="module">
+    <form id="main">
+        <label for="rprice">Retail Price: </label>
+        <input type="number" id="rprice" ><br><br>
+        <label for="cogoods">Cost of Goods: </label>
+        <input type="number" id="cogoods" ><br><br>        
+        <input type="submit" value="Calculate">
+    </form>
+
+    
+    </div>
+        </div>
+
+        <div id="display"></div>
+<script>
+    let retailPrice = document.getElementById("rprice");
+    let costOfGoods = document.getElementById("cogoods");
+    let form = document.getElementById("main");
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    console.log(calculate());
+    document.getElementById("display").innerHTML = calculate();
+});
+function calculate (){
+    let difference = retailPrice.value - costOfGoods.value
+    return retailPrice.value / difference 
+ };
+</script>
+</body>
+</html>

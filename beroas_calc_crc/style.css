@@ -1,0 +1,36 @@
+body {
+    font-family: Montserrat, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #222;
+    color: white;
+  }
+
+  header {
+    margin-top: 0%;
+  }
+  
+  .module-border-wrap{
+    max-width: 250px;
+    padding: 1rem;
+    padding: 3px;
+    position: relative;
+    background: linear-gradient(to right, rgb(12, 64, 235), purple);
+  }
+  
+  .module {
+    background: #222;
+    color: white;
+    padding: 2rem;
+  }
+
+  input[type=submit] {
+    font-family: Montserrat;
+    background-color: #222;
+    color: white;
+    border-color: white;
+    border-radius:10%;
+}
+  
