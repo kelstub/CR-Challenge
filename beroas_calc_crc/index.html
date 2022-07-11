@@ -29,6 +29,8 @@
         </div>
 
         <div id="display"></div>
+
+    <div class=""website-counter></div>
 <script>
     let retailPrice = document.getElementById("rprice");
     let costOfGoods = document.getElementById("cogoods");
@@ -42,6 +44,9 @@ function calculate (){
     let difference = retailPrice.value - costOfGoods.value
     return retailPrice.value / difference 
  };
+
+var coutnerContainer = document.querySelector(".website-counter")
+
 </script>
 </body>
 </html>
