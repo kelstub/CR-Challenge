@@ -31,35 +31,28 @@
         <div id="display"></div>
 
     <div class=""website-counter></div>
-<script>
-    let retailPrice = document.getElementById("rprice");
-    let costOfGoods = document.getElementById("cogoods");
-    let form = document.getElementById("main");
-form.addEventListener("submit",function(event){
-    event.preventDefault();
-    console.log(calculate());
-    document.getElementById("display").innerHTML = calculate();
-});
-function calculate (){
-    let difference = retailPrice.value - costOfGoods.value
-    return retailPrice.value / difference 
- };
-
-var coutnerContainer = document.querySelector(".website-counter")
-function calculate (){
-    let difference = retailPrice.value - costOfGoods.value
-    return retailPrice.value / difference 
- };
-
- var counterContainer = document.querySelector(".webiste-counter");
-                    var visitCount = localStorage.getItem("page_view");
-
-                    visitCount = Number(visitCount) + 1;
-
-                    localStorage.setItem("page_view", visitCount);
-
-                    counterContainer.innerHTML = visitCount;
-
-</script>
+    <script>
+        let retailPrice = document.getElementById("rprice");
+        let costOfGoods = document.getElementById("cogoods");
+        let form = document.getElementById("main");
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+        console.log(calculate());
+        document.getElementById("display").innerHTML = calculate();
+    });
+    function calculate (){
+        let difference = retailPrice.value - costOfGoods.value
+        return retailPrice.value / difference 
+     };
+    
+     var counterContainer = document.querySelector(".webiste-counter");
+                        var visitCount = localStorage.getItem("page_view");
+    
+                        visitCount = Number(visitCount) + 1;
+    
+                        localStorage.setItem("page_view", visitCount);
+    
+                        counterContainer.innerHTML = visitCount;
+    </script>
 </body>
 </html>
