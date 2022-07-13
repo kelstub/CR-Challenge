@@ -46,6 +46,19 @@ function calculate (){
  };
 
 var coutnerContainer = document.querySelector(".website-counter")
+function calculate (){
+    let difference = retailPrice.value - costOfGoods.value
+    return retailPrice.value / difference 
+ };
+
+ var counterContainer = document.querySelector(".webiste-counter");
+                    var visitCount = localStorage.getItem("page_view");
+
+                    visitCount = Number(visitCount) + 1;
+
+                    localStorage.setItem("page_view", visitCount);
+
+                    counterContainer.innerHTML = visitCount;
 
 </script>
 </body>
